@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee for me. Salesmen working place</title>
+</head>
+<body>
+   <div class="container">
+        <h1 class="banner">Coffee for me -- Salesmen working place</h1>
+       <h2 class="banner"> {{name}} </h2>
+
+        <h2>Beverage selected: {{ beverage }}</h2>
+        <h2>Additional selected: {{ additional }} </h2>
+       <h2>Price: {{ bill }} BY </h2>
+       <p class="banner">Please press "Make order" and be redirected to new beverage</p>
+
+
+        <form method="POST" >
+	       <input type="submit" value="Make order">
+           </form>
+
+    </div>
+
+
+        <div class="error">
+        </div>
+
+</body>
+
+</html>

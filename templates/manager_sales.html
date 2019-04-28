@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee for me</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="banner">Coffee for me</h1>
+        <h1 class="banner">Sales</h1>
+
+
+        <div class="people">
+            <table>
+                <caption>Statistics</caption>
+                <thead>
+                    <tr>
+                        <th>Seller name</th>
+                        <th>Number of sales</th>
+                        <th>Total Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 {% for row in table_rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+
+            </tr>
+        {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="error">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee for me. Salesmen working place</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="banner">Coffee for me -- Salesmen working place</h1>
+        <h2 class="banner"> {{name}} </h2>
+
+        <h2 class="banner">Select 1 beverage type</h2>
+
+        <div class="selection editor">
+            {%for i in to_send%}
+            <p><a class="slsm" href="{{i[0]}}" role="button">{{i[0]}}</a></p>
+            {%endfor%}
+        </div>
+
+        <div class="error">
+        </div>
+    </div>
+</body>
+
+</html>
