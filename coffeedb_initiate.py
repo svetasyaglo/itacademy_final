@@ -2,7 +2,7 @@ import sqlite3
 
 con = sqlite3.connect("CoffeeForMeDB.db")
 c = con.cursor()
-# creating db structure + intial data
+# creating db structure + intial data 
 
 CoffeeForMeDB_intial = """
     create table if not exists employees(employee_id primary key, name VARCHAR(24), position INT);
