@@ -16,8 +16,6 @@ class Test_DB(unittest.TestCase):
     def test_execute_query_get(self, mock_db):
         expected_info =  [('Sugar',)]
         query = 'select bev_type from beverage_type'
-#        print(mock_db.execute_query_get(query))
-#        mock_db.assertCalledWith(query)
         self.assertFalse(mock_db.execute_query_get(query) == expected_info, "Get method is wrong")
 
     @mock.patch(fake_db)
@@ -26,7 +24,6 @@ class Test_DB(unittest.TestCase):
         bill_info = ('John', 3.2, '2019-04-14')
         self.assertFalse(mock_db.send_bill_to_db(bill_info) == True, "Post query is wrong")
 
-#    @mock.patch('logger.info')
     @mock.patch(fake_db)
     def test_get_beverage_types(self, mock_db):
         expected_info =  [('Raf',)]
@@ -52,7 +49,6 @@ class Test_DB(unittest.TestCase):
 
     @mock.patch('coffee_web.db')
     def test_start_page(self, mock_db_web):
-#        mock_db_web.side_effect = not_a_db_hit
         response = app.test_client().get('/')
         self.assertEqual(response.status_code, 200)
 
