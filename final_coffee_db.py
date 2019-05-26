@@ -20,7 +20,6 @@ class DataBase(object):
             logger.error("Cannot connect to db {}".format(error))
         self.cursor = self.conn.cursor()
 
-
     def execute_query_get(self, query, param=None):
         info = 'Executing get query: {}, {}'.format(query, param)
         logger.info(info)
