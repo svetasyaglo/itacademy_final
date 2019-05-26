@@ -14,7 +14,8 @@ _______________________________________________________________________
 Instructions for salesmans:
 
 1. On the main page press on "Salesman" --> be redirected to login page.
-2. Enter name. Valid salesmen names are: John, Ann, Ted. Press "login" button --> be redirected to the page with beverages to select.
+2. Enter name. Valid salesmen names are: John, Ann, Ted. 
+Press "login" button --> be redirected to the page with beverages to select.
 3. Press beverage to select --> be redirected to the page with additionals to select.
 4. Press additional to select --> be redirected to the page with selection displayed. Press "Get price" --> be redirected to the page with your selection and price dispalayed.
 5. To write the data (order) to the DataBase press "Make order" button --> be redirected to the page for the next beverage selection.
